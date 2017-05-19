@@ -11,14 +11,21 @@ a string used to compare the incoming request to determine if the default page s
  var NNDefaultPageIndicator = "./";
 //### Default Page Indicator ###
 
+//### Set the default port of your application ####
+var DEFAULT_PORT = 8000;
+//### Set the default port of your application ####
+
+
+
+
+
+//##### There should be no need to alter anything below this line ######
 
 var util = require('util'),
     http = require('http'),
     fs = require('fs'),
     url = require('url'),
     events = require('events');
-
-var DEFAULT_PORT = 8000;
 
 function main(argv) {
   new HttpServer({
