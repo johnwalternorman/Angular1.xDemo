@@ -1,0 +1,7 @@
+
+<!--// This calls a remote RESTful API and therefore, it may take a while to load //-->
+<article ng-app="booksInventoryApp">
+  <section ng-controller="booksController">
+    <h2 ng-repeat="book in data.books">{{book.name}}</h2>
+  </section>
+</article>
